@@ -1,0 +1,25 @@
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class ThreadedServer {
+   public static void main(String[] args) throws Exception{
+
+      //create a server socket
+      
+
+   public static final Integer DEFAULT_PORT = 3000;
+
+
+System.out.printf("Starting server on port %d\n", port);
+ServerSocket server = new ServerSocket(port);
+
+while (true) {
+   Socket client = server.accept();
+   System.out.println("New client connection");
+
+   ClientHandler handler = new ClientHandler(client, cookie);
+   handler.start();
+
+    }
+}
+}
